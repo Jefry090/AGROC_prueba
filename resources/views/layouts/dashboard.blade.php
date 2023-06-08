@@ -1,7 +1,7 @@
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <ul class="nav">
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ route('home') }}">
                 <i class="icon-grid menu-icon"></i>
                 <span class="menu-title">Inicio</span>
             </a>
@@ -16,7 +16,7 @@
             <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item"> <a class="nav-link"
-                            href="pages/ui-features/buttons.html">Buttons</a></li>
+                            href="{{ route('animals.index') }}">Buttons</a></li>
                     <li class="nav-item"> <a class="nav-link"
                             href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
                     <li class="nav-item"> <a class="nav-link"

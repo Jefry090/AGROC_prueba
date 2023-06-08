@@ -279,6 +279,11 @@ a:hover {
   margin-top: 18px;
 }
 
+.animal{
+    position: relative;
+    top: 100px;
+}
+
 .owl-theme .owl-dots .owl-dot {
   display: inline-block;
 }

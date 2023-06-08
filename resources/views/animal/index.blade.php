@@ -3,13 +3,13 @@
 @section('template_title')
     Animal
 @endsection
-
 @section('content')
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="card">
-                    <div class="card-header">
+                    <div class="card-header animal">
                         <div style="display: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
@@ -28,14 +28,13 @@
                             <p>{{ $message }}</p>
                         </div>
                     @endif
-
                     <div class="card-body">
                         <div class="table-responsive">
                             <table class="table table-striped table-hover">
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Name</th>
 										<th>Breed</th>
 										<th>Dateborn</th>
@@ -43,11 +42,12 @@
                                         <th></th>
                                     </tr>
                                 </thead>
+                                
                                 <tbody>
                                     @foreach ($animals as $animal)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $animal->Name }}</td>
 											<td>{{ $animal->Breed }}</td>
 											<td>{{ $animal->DateBorn }}</td>
@@ -63,13 +63,17 @@
                                             </td>
                                         </tr>
                                     @endforeach
+
                                 </tbody>
                             </table>
+
                         </div>
                     </div>
                 </div>
                 {!! $animals->links() !!}
+
             </div>
         </div>
     </div>
 @endsection
+

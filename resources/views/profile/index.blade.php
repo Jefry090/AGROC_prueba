@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>User Rol</th>
 										<th>Id Users</th>
 
@@ -46,7 +46,7 @@
                                     @foreach ($profiles as $profile)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $profile->User_Rol }}</td>
 											<td>{{ $profile->id_users }}</td>
 

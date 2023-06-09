@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Name</th>
 										<th>Type</th>
 										<th>Quantity</th>
@@ -48,7 +48,7 @@
                                     @foreach ($crops as $crop)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $crop->Name }}</td>
 											<td>{{ $crop->Type }}</td>
 											<td>{{ $crop->Quantity }}</td>

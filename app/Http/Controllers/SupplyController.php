@@ -48,7 +48,7 @@ class SupplyController extends Controller
         $supply = Supply::create($request->all());
 
         return redirect()->route('supplies.index')
-            ->with('success', 'Supply created successfully.');
+            ->with('success', 'Suministro agregado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class SupplyController extends Controller
         $supply->update($request->all());
 
         return redirect()->route('supplies.index')
-            ->with('success', 'Supply updated successfully');
+            ->with('success', 'Suministro actualizado con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class SupplyController extends Controller
         $supply = Supply::find($id)->delete();
 
         return redirect()->route('supplies.index')
-            ->with('success', 'Supply deleted successfully');
+            ->with('success', 'Suministro eliminado con exito');
     }
 }

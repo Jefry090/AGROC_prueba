@@ -48,7 +48,7 @@ class GetinController extends Controller
         $getin = Getin::create($request->all());
 
         return redirect()->route('getins.index')
-            ->with('success', 'Getin created successfully.');
+            ->with('success', 'Entrada agregada con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class GetinController extends Controller
         $getin->update($request->all());
 
         return redirect()->route('getins.index')
-            ->with('success', 'Getin updated successfully');
+            ->with('success', 'Entrada actualizada con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class GetinController extends Controller
         $getin = Getin::find($id)->delete();
 
         return redirect()->route('getins.index')
-            ->with('success', 'Getin deleted successfully');
+            ->with('success', 'Entrada eliminada con exito');
     }
 }

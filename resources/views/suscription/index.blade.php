@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Type Suscription</th>
 										<th>Time</th>
 										<th>Price</th>
@@ -49,7 +49,7 @@
                                     @foreach ($suscriptions as $suscription)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $suscription->Type_Suscription }}</td>
 											<td>{{ $suscription->Time }}</td>
 											<td>{{ $suscription->price }}</td>

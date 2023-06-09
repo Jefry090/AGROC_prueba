@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Name</th>
 										<th>Section</th>
 										<th>Piture</th>
@@ -48,7 +48,7 @@
                                     @foreach ($categories as $category)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $category->Name }}</td>
 											<td>{{ $category->section }}</td>
 											<td>{{ $category->piture }}</td>

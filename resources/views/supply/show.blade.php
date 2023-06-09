@@ -19,17 +19,17 @@
                     </div>
 
                     <div class="card-body">
-                        
+
                         <div class="form-group">
-                            <strong>Name:</strong>
+                            <strong>Nombre:</strong>
                             {{ $supply->Name }}
                         </div>
                         <div class="form-group">
-                            <strong>Description:</strong>
+                            <strong>descripción:</strong>
                             {{ $supply->Description }}
                         </div>
                         <div class="form-group">
-                            <strong>Priceunit:</strong>
+                            <strong>precio de unidad:</strong>
                             {{ $supply->PriceUnit }}
                         </div>
 

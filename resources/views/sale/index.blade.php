@@ -16,11 +16,12 @@
                                 {{ __('Sale') }}
                             </span>
 
-                             <div class="float-right">
-                                <a href="{{ route('sales.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                            <div class="float-right">
+                                <a href="{{ route('sales.create') }}" class="btn btn-primary btn-sm float-right"
+                                    data-placement="left">
+                                    {{ __('Create New') }}
                                 </a>
-                              </div>
+                            </div>
                         </div>
                     </div>
                     @if ($message = Session::get('success'))
@@ -35,10 +36,10 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
-										<th>Date</th>
-										<th>Amount Total</th>
-										<th>Id Warehouses</th>
+
+                                        <th>Date</th>
+                                        <th>Amount Total</th>
+                                        <th>Id Warehouses</th>
 
                                         <th></th>
                                     </tr>
@@ -47,18 +48,23 @@
                                     @foreach ($sales as $sale)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
-											<td>{{ $sale->Date }}</td>
-											<td>{{ $sale->Amount_Total }}</td>
-											<td>{{ $sale->id_warehouses }}</td>
+
+                                            <td>{{ $sale->Date }}</td>
+                                            <td>{{ $sale->Amount_Total }}</td>
+                                            <td>{{ $sale->id_warehouses }}</td>
 
                                             <td>
-                                                <form action="{{ route('sales.destroy',$sale->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('sales.show',$sale->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('sales.edit',$sale->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                <form action="{{ route('sales.destroy', $sale->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary "
+                                                        href="{{ route('sales.show', $sale->id) }}"><i
+                                                            class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                    <a class="btn btn-sm btn-success"
+                                                        href="{{ route('sales.edit', $sale->id) }}"><i
+                                                            class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm"><i
+                                                            class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>
                                                 </form>
                                             </td>
                                         </tr>

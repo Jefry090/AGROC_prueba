@@ -48,7 +48,7 @@ class BillController extends Controller
         $bill = Bill::create($request->all());
 
         return redirect()->route('bills.index')
-            ->with('success', 'Bill created successfully.');
+            ->with('success', 'Factura agregado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class BillController extends Controller
         $bill->update($request->all());
 
         return redirect()->route('bills.index')
-            ->with('success', 'Bill updated successfully');
+            ->with('success', 'Factura actualizada con exito.');
     }
 
     /**
@@ -104,6 +104,6 @@ class BillController extends Controller
         $bill = Bill::find($id)->delete();
 
         return redirect()->route('bills.index')
-            ->with('success', 'Bill deleted successfully');
+            ->with('success', 'Factura eliminada con exito.');
     }
 }

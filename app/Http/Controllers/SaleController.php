@@ -48,7 +48,7 @@ class SaleController extends Controller
         $sale = Sale::create($request->all());
 
         return redirect()->route('sales.index')
-            ->with('success', 'Sale created successfully.');
+            ->with('success', 'Venta agregada con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class SaleController extends Controller
         $sale->update($request->all());
 
         return redirect()->route('sales.index')
-            ->with('success', 'Sale updated successfully');
+            ->with('success', 'Venta actualizado con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class SaleController extends Controller
         $sale = Sale::find($id)->delete();
 
         return redirect()->route('sales.index')
-            ->with('success', 'Sale deleted successfully');
+            ->with('success', 'Venta eliminado con exito');
     }
 }

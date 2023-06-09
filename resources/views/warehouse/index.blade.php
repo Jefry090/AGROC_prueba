@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Name</th>
 										<th>Address</th>
 										<th>Capacity</th>
@@ -48,7 +48,7 @@
                                     @foreach ($warehouses as $warehouse)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $warehouse->Name }}</td>
 											<td>{{ $warehouse->Address }}</td>
 											<td>{{ $warehouse->Capacity }}</td>

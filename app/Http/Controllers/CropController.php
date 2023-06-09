@@ -48,7 +48,7 @@ class CropController extends Controller
         $crop = Crop::create($request->all());
 
         return redirect()->route('crops.index')
-            ->with('success', 'Crop created successfully.');
+            ->with('success', 'Cultivo agregado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class CropController extends Controller
         $crop->update($request->all());
 
         return redirect()->route('crops.index')
-            ->with('success', 'Crop updated successfully');
+            ->with('success', 'Cultivo actualizado con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class CropController extends Controller
         $crop = Crop::find($id)->delete();
 
         return redirect()->route('crops.index')
-            ->with('success', 'Crop deleted successfully');
+            ->with('success', 'Cultivo eliminado con exito');
     }
 }

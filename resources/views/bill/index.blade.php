@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Time</th>
 										<th>Type Bagde</th>
 										<th>Cost</th>
@@ -48,7 +48,7 @@
                                     @foreach ($bills as $bill)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $bill->Time }}</td>
 											<td>{{ $bill->Type_Bagde }}</td>
 											<td>{{ $bill->cost }}</td>

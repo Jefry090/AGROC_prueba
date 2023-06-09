@@ -19,33 +19,33 @@
                     </div>
 
                     <div class="card-body">
-                        
+
                         <div class="form-group">
-                            <strong>Name:</strong>
+                            <strong>Nombre:</strong>
                             {{ $post->Name }}
                         </div>
                         <div class="form-group">
-                            <strong>Type Product:</strong>
+                            <strong>Tipo de producto:</strong>
                             {{ $post->Type_Product }}
                         </div>
                         <div class="form-group">
-                            <strong>Price:</strong>
+                            <strong>Precio:</strong>
                             {{ $post->Price }}
                         </div>
                         <div class="form-group">
-                            <strong>Description:</strong>
+                            <strong>descripcion:</strong>
                             {{ $post->description }}
                         </div>
                         <div class="form-group">
-                            <strong>Archives:</strong>
+                            <strong>Archivos:</strong>
                             {{ $post->Archives }}
                         </div>
                         <div class="form-group">
-                            <strong>Date:</strong>
+                            <strong>Fecha:</strong>
                             {{ $post->Date }}
                         </div>
                         <div class="form-group">
-                            <strong>Id Profiles:</strong>
+                            <strong>Id Perfil:</strong>
                             {{ $post->id_profiles }}
                         </div>
 

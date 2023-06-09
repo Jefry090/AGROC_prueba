@@ -48,7 +48,7 @@ class TransactionController extends Controller
         $transaction = Transaction::create($request->all());
 
         return redirect()->route('transactions.index')
-            ->with('success', 'Transaction created successfully.');
+            ->with('success', 'Transacción agregada con exito.');
     }
 
     /**
@@ -74,7 +74,7 @@ class TransactionController extends Controller
     {
         $transaction = Transaction::find($id);
 
-        return view('transaction.edit', compact('transaction'));
+        return view('Transaction.edit', compact('transaction'));
     }
 
     /**
@@ -91,7 +91,7 @@ class TransactionController extends Controller
         $transaction->update($request->all());
 
         return redirect()->route('transactions.index')
-            ->with('success', 'Transaction updated successfully');
+            ->with('success', 'Transacción actualizada con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class TransactionController extends Controller
         $transaction = Transaction::find($id)->delete();
 
         return redirect()->route('transactions.index')
-            ->with('success', 'Transaction deleted successfully');
+            ->with('success', 'Transacción eliminada con exito');
     }
 }

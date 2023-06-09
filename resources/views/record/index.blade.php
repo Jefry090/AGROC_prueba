@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Date</th>
 										<th>Description</th>
 										<th>Id Getins</th>
@@ -49,7 +49,7 @@
                                     @foreach ($records as $record)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $record->Date }}</td>
 											<td>{{ $record->Description }}</td>
 											<td>{{ $record->id_getins }}</td>

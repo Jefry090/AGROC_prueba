@@ -48,7 +48,7 @@ class ProfileController extends Controller
         $profile = Profile::create($request->all());
 
         return redirect()->route('profiles.index')
-            ->with('success', 'Profile created successfully.');
+            ->with('success', 'Perfil agregado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class ProfileController extends Controller
         $profile->update($request->all());
 
         return redirect()->route('profiles.index')
-            ->with('success', 'Profile updated successfully');
+            ->with('success', 'Perfil actulizado con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class ProfileController extends Controller
         $profile = Profile::find($id)->delete();
 
         return redirect()->route('profiles.index')
-            ->with('success', 'Profile deleted successfully');
+            ->with('success', 'Perfil eliminado con exito');
     }
 }

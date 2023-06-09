@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Security Code</th>
 										<th>Card Holder</th>
 										<th>Card Number</th>
@@ -49,7 +49,7 @@
                                     @foreach ($paymentMethods as $paymentMethod)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $paymentMethod->Security_Code }}</td>
 											<td>{{ $paymentMethod->Card_Holder }}</td>
 											<td>{{ $paymentMethod->Card_Number }}</td>

@@ -48,7 +48,7 @@ class PaymentMethodController extends Controller
         $paymentMethod = PaymentMethod::create($request->all());
 
         return redirect()->route('payment-methods.index')
-            ->with('success', 'PaymentMethod created successfully.');
+            ->with('success', 'Metodo de pago agregado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class PaymentMethodController extends Controller
         $paymentMethod->update($request->all());
 
         return redirect()->route('payment-methods.index')
-            ->with('success', 'PaymentMethod updated successfully');
+            ->with('success', 'Metodo de pago actualizado con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class PaymentMethodController extends Controller
         $paymentMethod = PaymentMethod::find($id)->delete();
 
         return redirect()->route('payment-methods.index')
-            ->with('success', 'PaymentMethod deleted successfully');
+            ->with('success', 'Metodo de pago eliminado con exito');
     }
 }

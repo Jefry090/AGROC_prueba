@@ -48,7 +48,7 @@ class MachineryController extends Controller
         $machinery = Machinery::create($request->all());
 
         return redirect()->route('machineries.index')
-            ->with('success', 'Machinery created successfully.');
+            ->with('success', 'Maquinaria agregada con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class MachineryController extends Controller
         $machinery->update($request->all());
 
         return redirect()->route('machineries.index')
-            ->with('success', 'Machinery updated successfully');
+            ->with('success', 'Maquinaria actualizada con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class MachineryController extends Controller
         $machinery = Machinery::find($id)->delete();
 
         return redirect()->route('machineries.index')
-            ->with('success', 'Machinery deleted successfully');
+            ->with('success', 'Maquinaria eliminada con exito');
     }
 }

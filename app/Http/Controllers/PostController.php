@@ -48,7 +48,7 @@ class PostController extends Controller
         $post = Post::create($request->all());
 
         return redirect()->route('posts.index')
-            ->with('success', 'Post created successfully.');
+            ->with('success', 'Publicación agregada con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class PostController extends Controller
         $post->update($request->all());
 
         return redirect()->route('posts.index')
-            ->with('success', 'Post updated successfully');
+            ->with('success', 'Publicación actualizada con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class PostController extends Controller
         $post = Post::find($id)->delete();
 
         return redirect()->route('posts.index')
-            ->with('success', 'Post deleted successfully');
+            ->with('success', 'Publicación eliminada con exito');
     }
 }

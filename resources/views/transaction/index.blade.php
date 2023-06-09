@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Start Date</th>
 										<th>Amount Paid</th>
 										<th>Transaction Status</th>
@@ -49,7 +49,7 @@
                                     @foreach ($transactions as $transaction)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $transaction->Start_Date }}</td>
 											<td>{{ $transaction->Amount_Paid }}</td>
 											<td>{{ $transaction->Transaction_Status }}</td>

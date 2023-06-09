@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Type</th>
 										<th>Model</th>
 										<th>Brand</th>
@@ -49,7 +49,7 @@
                                     @foreach ($machineries as $machinery)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $machinery->Type }}</td>
 											<td>{{ $machinery->Model }}</td>
 											<td>{{ $machinery->Brand }}</td>

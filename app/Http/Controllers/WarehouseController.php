@@ -48,7 +48,7 @@ class WarehouseController extends Controller
         $warehouse = Warehouse::create($request->all());
 
         return redirect()->route('warehouses.index')
-            ->with('success', 'Warehouse created successfully.');
+            ->with('success', 'Almacen agregado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class WarehouseController extends Controller
         $warehouse->update($request->all());
 
         return redirect()->route('warehouses.index')
-            ->with('success', 'Warehouse updated successfully');
+            ->with('success', 'Almacen actualizado con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class WarehouseController extends Controller
         $warehouse = Warehouse::find($id)->delete();
 
         return redirect()->route('warehouses.index')
-            ->with('success', 'Warehouse deleted successfully');
+            ->with('success', 'Almacen eliminado con exito');
     }
 }

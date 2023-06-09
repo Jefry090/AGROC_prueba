@@ -48,7 +48,7 @@ class AnimalController extends Controller
         $animal = Animal::create($request->all());
 
         return redirect()->route('animals.index')
-            ->with('success', 'Animal created successfully.');
+            ->with('success', 'Animal agregado con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class AnimalController extends Controller
         $animal->update($request->all());
 
         return redirect()->route('animals.index')
-            ->with('success', 'Animal updated successfully');
+            ->with('success', 'Animal actualizado con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class AnimalController extends Controller
         $animal = Animal::find($id)->delete();
 
         return redirect()->route('animals.index')
-            ->with('success', 'Animal deleted successfully');
+            ->with('success', 'Animal eliminado con exito');
     }
 }

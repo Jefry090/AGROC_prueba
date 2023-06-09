@@ -48,7 +48,7 @@ class SuscriptionController extends Controller
         $suscription = Suscription::create($request->all());
 
         return redirect()->route('suscriptions.index')
-            ->with('success', 'Suscription created successfully.');
+            ->with('success', 'Suscripción agregada con exito.');
     }
 
     /**
@@ -91,7 +91,7 @@ class SuscriptionController extends Controller
         $suscription->update($request->all());
 
         return redirect()->route('suscriptions.index')
-            ->with('success', 'Suscription updated successfully');
+            ->with('success', 'Suscripción actualizada con exito');
     }
 
     /**
@@ -104,6 +104,6 @@ class SuscriptionController extends Controller
         $suscription = Suscription::find($id)->delete();
 
         return redirect()->route('suscriptions.index')
-            ->with('success', 'Suscription deleted successfully');
+            ->with('success', 'Suscripción eliminado con exito');
     }
 }

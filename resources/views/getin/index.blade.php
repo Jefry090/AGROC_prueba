@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Date</th>
 										<th>Quantity</th>
 										<th>Id Crops</th>
@@ -51,7 +51,7 @@
                                     @foreach ($getins as $getin)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $getin->Date }}</td>
 											<td>{{ $getin->Quantity }}</td>
 											<td>{{ $getin->id_crops }}</td>

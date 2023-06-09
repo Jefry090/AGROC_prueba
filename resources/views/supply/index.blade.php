@@ -35,10 +35,10 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
-										<th>Name</th>
-										<th>Description</th>
-										<th>Priceunit</th>
+
+										<th>Nombre</th>
+										<th>descripción</th>
+										<th>aparecio de unidad</th>
 
                                         <th></th>
                                     </tr>
@@ -47,7 +47,7 @@
                                     @foreach ($supplies as $supply)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $supply->Name }}</td>
 											<td>{{ $supply->Description }}</td>
 											<td>{{ $supply->PriceUnit }}</td>
